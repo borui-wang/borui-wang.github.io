@@ -32,7 +32,7 @@
               </p>
 
               <p>
-              Hi, I am a CS PhD Student at the <a href="https://cpsc.yale.edu/">Computer Science Department</a> of <a href="https://www.yale.edu/">Yale University</a>, working on natural language processing and machine learning with <a href="http://www.cs.yale.edu/homes/radev/">Professor Dragomir Radev</a> in the <a href="https://yale-lily.github.io/">LILY</a> (Language, Information, and Learning at Yale) Lab. My research interests are in knowledge reasoning, logical reasoning, multimodal language grounding, machine reading comprehension, question answering and pre-trained language models.
+              Hi, I am a CS PhD Student at the <a href="https://cpsc.yale.edu/">Computer Science Department</a> of <a href="https://www.yale.edu/">Yale University</a>, working on natural language processing and machine learning with <a href="http://www.cs.yale.edu/homes/radev/">Professor Dragomir Radev</a> in the <a href="https://yale-lily.github.io/">LILY</a> (Language, Information, and Learning at Yale) Lab. My research interests are in knowledge reasoning, logical reasoning, multimodal language grounding, machine reading comprehension, question answering, semantic parsing and pre-trained language models.
               </p>
               
               <p>
@@ -57,7 +57,9 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <ul>
-                <li><font color="red"><strong>[New]</strong></font> &nbsp; 2019.11.10 - Our paper “Learning General Latent-Variable Graphical Models with Predictive Belief Propagation” is accepted to AAAI 2020.</li>
+                <li><font color="red"><strong>[New]</strong></font> &nbsp; 2021.12.16 - Our <a href="https://arxiv.org/abs/2112.08614">paper</a> “KAT: A Knowledge Augmented Transformer for Vision-and-Language” ranked No. 1 on the OK-VQA challenge <a href="https://okvqa.allenai.org/leaderboard.html">leaderboard</a>. Check it out!</li>
+                <li><font color="red"><strong>[New]</strong></font> &nbsp; 2021.05.06 - Our paper “ConvoSumm: Conversation Summarization Benchmark and Improved Abstractive Summarization with Argument Mining” is accepted to ACL 2021.</li>
+                <li>2019.11.10 - Our paper “Learning General Latent-Variable Graphical Models with Predictive Belief Propagation” is accepted to AAAI 2020.</li>
                 <li>2019.07.22 - Our paper “Imitation Learning for Human Pose Prediction” is accepted to ICCV 2019.</li>
                 <li>2018.11.05 - Our paper “Action-Agnostic Human Pose Forecasting” is accepted to WACV 2019.</li>
               </ul>
@@ -73,6 +75,103 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          
+            <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="container">
+                  <img src='images/confit.png' width="270" height="auto">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2112.08713">
+                  <papertitle>CONFIT: Toward Faithful Dialogue Summarization with Linguistically-Informed Contrastive Fine-tuning</papertitle>
+                </a>
+                <br>
+                Xiangru Tang, Arjun Nair, <strong>Borui Wang</strong>, Bingyao Wang, Jai Desai, Aaron Wade, Haoran Li, Asli Celikyilmaz, Yashar Mehdad, Dragomir Radev
+                <br>
+                arXiv Preprint 2021
+                <br>
+                <a href="https://arxiv.org/abs/2112.08713">[arXiv]</a>
+                <br>
+                <p></p>
+                <p>Factual inconsistencies in generated summaries severely limit the practical applications of abstractive dialogue summarization. Although significant progress has been achieved by using pre-trained models, substantial amounts of hallucinated content are found during the human evaluation. Pre-trained models are most commonly fine-tuned with cross-entropy loss for text summarization, which may not be an optimal strategy. In this work, we provide a typology of factual errors with annotation data to highlight the types of errors and move away from a binary understanding of factuality. We further propose a training strategy that improves the factual consistency and overall quality of summaries via a novel contrastive fine-tuning, called ConFiT. Based on our linguistically-informed typology of errors, we design different modular objectives that each target a specific type. Specifically, we utilize hard negative samples with errors to reduce the generation of factual inconsistency. In order to capture the key information between speakers, we also design a dialogue-specific loss. Using human evaluation and automatic faithfulness metrics, we show that our model significantly reduces all kinds of factual errors on the dialogue summarization, SAMSum corpus. Moreover, our model could be generalized to the meeting summarization, AMI corpus, and it produces significantly higher scores than most of the baselines on both datasets regarding word-overlap metrics.</p>
+              </td>
+            </tr>
+          
+          
+            
+          
+            
+            <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="container">
+                  <img src='images/kat.png' width="270" height="auto">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2112.08614">
+                  <papertitle>KAT: A Knowledge Augmented Transformer for Vision-and-Language</papertitle>
+                </a>
+                <br>
+                Liangke Gui, <strong>Borui Wang</strong>, Qiuyuan Huang, Alex Hauptmann, Yonatan Bisk, Jianfeng Gao
+                <br>
+                arXiv Preprint 2021
+                <br>
+                <a href="https://arxiv.org/abs/2112.08614">[arXiv]</a>
+                <br>
+                <p></p>
+                <p>The primary focus of recent work with largescale transformers has been on optimizing the amount of information packed into the model's parameters. In this work, we ask a different question: Can multimodal transformers leverage explicit knowledge in their reasoning? Existing, primarily unimodal, methods have explored approaches under the paradigm of knowledge retrieval followed by answer prediction, but leave open questions about the quality and relevance of the retrieved knowledge used, and how the reasoning processes over implicit and explicit knowledge should be integrated. To address these challenges, we propose a novel model - Knowledge Augmented Transformer (KAT) - which achieves a strong state-of-the-art result (+6 points absolute) on the open-domain multimodal task of OK-VQA. Our approach integrates implicit and explicit knowledge in an end to end encoder-decoder architecture, while still jointly reasoning over both knowledge sources during answer generation. An additional benefit of explicit knowledge integration is seen in improved interpretability of model predictions in our analysis.</p>
+              </td>
+            </tr>
+
+            <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="container">
+                  <img src='images/investigating.png' width="270" height="auto">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2109.09195">
+                  <papertitle>Investigating Crowdsourcing Protocols for Evaluating the Factual Consistency of Summaries</papertitle>
+                </a>
+                <br>
+                Xiangru Tang, Alexander R. Fabbri, Ziming Mao, Griffin Adams, <strong>Borui Wang</strong>, Haoran Li, Yashar Mehdad, Dragomir Radev
+                <br>
+                arXiv Preprint 2021
+                <br>
+                <a href="https://arxiv.org/abs/2109.09195">[arXiv]</a>
+                <br>
+                <p></p>
+                <p>Current pre-trained models applied to summarization are prone to factual inconsistencies which either misrepresent the source text or introduce extraneous information. Thus, comparing the factual consistency of summaries is necessary as we develop improved models. However, the optimal human evaluation setup for factual consistency has not been standardized. To address this issue, we crowdsourced evaluations for factual consistency using the rating-based Likert scale and ranking-based Best-Worst Scaling protocols, on 100 articles from each of the CNN-Daily Mail and XSum datasets over four state-of-the-art models, to determine the most reliable evaluation framework. We find that ranking-based protocols offer a more reliable measure of summary quality across datasets, while the reliability of Likert ratings depends on the target dataset and the evaluation design. Our crowdsourcing templates and summary evaluations will be publicly available to facilitate future research on factual consistency in summarization.</p>
+              </td>
+            </tr>
+
+
+            <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="container">
+                  <img src='images/convosumm.png' width="270" height="auto">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2106.00829">
+                  <papertitle>ConvoSumm: Conversation Summarization Benchmark and Improved Abstractive Summarization with Argument Mining</papertitle>
+                </a>
+                <br>
+                Alexander R. Fabbri, Faiaz Rahman, Imad Rizvi, <strong>Borui Wang</strong>, Haoran Li, Yashar Mehdad, Dragomir Radev
+                <br>
+                In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics (ACL), 2021.
+                <br>
+                <font style="color: rgb(255,120,0)">ACL 2021</font>
+                <br>
+                <a href="https://arxiv.org/abs/2106.00829">[arXiv]</a>
+                <br>
+                <p></p>
+                <p>Factual inconsistencies in generated summaries severely limit the practical applications of abstractive dialogue summarization. Although significant progress has been achieved by using pre-trained models, substantial amounts of hallucinated content are found during the human evaluation. Pre-trained models are most commonly fine-tuned with cross-entropy loss for text summarization, which may not be an optimal strategy. In this work, we provide a typology of factual errors with annotation data to highlight the types of errors and move away from a binary understanding of factuality. We further propose a training strategy that improves the factual consistency and overall quality of summaries via a novel contrastive fine-tuning, called ConFiT. Based on our linguistically-informed typology of errors, we design different modular objectives that each target a specific type. Specifically, we utilize hard negative samples with errors to reduce the generation of factual inconsistency. In order to capture the key information between speakers, we also design a dialogue-specific loss. Using human evaluation and automatic faithfulness metrics, we show that our model significantly reduces all kinds of factual errors on the dialogue summarization, SAMSum corpus. Moreover, our model could be generalized to the meeting summarization, AMI corpus, and it produces significantly higher scores than most of the baselines on both datasets regarding word-overlap metrics.</p>
+              </td>
+            </tr>
+
+          
             <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="container">
