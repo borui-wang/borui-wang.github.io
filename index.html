@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,18 +16,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-  <!-- <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-        font-family: 'EB Garamond', serif;
-    }
-  </style> -->
 
   <style>
     body {
@@ -51,19 +38,14 @@
                 <name>Borui Wang</name>
               </p>
 
-              <!--<p>
-              Hi, I am a CS Ph.D. Student at the <a href="https://cpsc.yale.edu/">Computer Science Department</a> of <a href="https://www.yale.edu/">Yale University</a>, working on natural language processing and machine learning with <a href="http://www.cs.yale.edu/homes/radev/">Professor Dragomir Radev</a> in the <a href="https://yale-lily.github.io/">LILY</a> (Language, Information, and Learning at Yale) Lab. My research interests are in knowledge reasoning, neuro-symbolic reasoning, logical reasoning, multimodal language grounding, machine reading comprehension, question answering, semantic parsing and pre-trained language models.
-              </p>-->
-
               <p>
               Hi, I am a final-year CS Ph.D. Student at the <a href="https://cpsc.yale.edu/">Computer Science Department</a> of <a href="https://www.yale.edu/">Yale University</a>, working on large language models, natural language processing and machine learning. I am fortunate to be advised by <a href="https://www.cs.yale.edu/homes/ying-rex/">Professor Rex Ying</a>, <a href="https://www.cs.columbia.edu/~kathy/">Professor Kathleen McKeown</a> (from Columbia University), and <a href="http://www.cs.yale.edu/homes/radev/">Professor Dragomir Radev</a>.
               </p> 
               
               <p>
-              My main research directions are in large language models, LLM-powered reinforcement learning, knowledge and logical reasoning, neuro-symbolic reasoning, multimodal language grounding, and applications of large language models and deep learning in quantitative finance and financial technology.
+              My main research directions are in large language models, LLM-powered reinforcement learning, knowledge and logical reasoning, neuro-symbolic reasoning and multimodal language grounding. I am also very interested in the application of large language models and deep learning in quantitative finance.
               </p>
 
-              
               <p>
               Before coming to Yale, I obtained my Master of Science degree in Computer Science from <a href="https://www.stanford.edu">Stanford University</a>, where I conducted research in machine learning, computer vision and robotics at the <a href="https://ai.stanford.edu">Stanford Artificial Intelligence Laboratory</a>. Prior to that, I spent four wonderful undergraduate years at <a href="https://www.harvard.edu">Harvard University</a> and received my Bachelor of Arts degree in Computer Science with a secondary field in Economics from Harvard.
               </p>
@@ -95,8 +77,8 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>News</heading>
               <ul>
-                <li><font color="red"><strong>[New]</strong></font> &nbsp; 2023.05.02 - Our paper “Logical Transformers: Infusing Logical Structures into Pre-Trained Language Models” is accepted to ACL 2023 Findings.</li>
-                <li><font color="red"><strong>[New]</strong></font> &nbsp; 2022.10.06 - Our paper “STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension” is accepted to EMNLP 2022.</li>
+                <li><!--<font color="red"><strong>[New]</strong></font> &nbsp;-->2023.05.02 - Our paper “Logical Transformers: Infusing Logical Structures into Pre-Trained Language Models” is accepted to ACL 2023 Findings.</li>
+                <li><!--<font color="red"><strong>[New]</strong></font> &nbsp;-->2022.10.06 - Our paper “STRUDEL: Structured Dialogue Summarization for Dialogue Comprehension” is accepted to EMNLP 2022.</li>
                 <li>2022.04.07 - Our paper “KAT: A Knowledge Augmented Transformer for Vision-and-Language” is accepted to NAACL 2022.</li>
                 <li>2022.04.07 - Our paper “CONFIT: Toward Faithful Dialogue Summarization with Linguistically-Informed Contrastive Fine-tuning” is accepted to NAACL 2022.</li>
                 <li>2022.04.07 - Our paper “Investigating Crowdsourcing Protocols for Evaluating the Factual Consistency of Summaries” is accepted to NAACL 2022.</li>
@@ -117,6 +99,26 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                    <div class="container">
+                    <img src='images/dystil.png' width="270" height="auto">
+                    </div>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <a href = "papers/dystil.pdf">
+                    <papertitle>DYSTIL: Dynamic Strategy Induction with Large Language Models for Reinforcement Learning</papertitle>
+                    </a>
+                    <br>
+                    <strong>Borui Wang</strong>, Kathleen McKeown, Rex Ying
+                    <br>
+                    Preprint
+                    <br>
+                    <p></p>
+                    <p>Reinforcement learning from expert demonstrations has long remained a challenging research problem, and existing state-of-the-art methods using behavioral cloning plus further RL training often suffer from poor generalization, low sample efficiency, and poor model interpretability. Inspired by the strong reasoning abilities of large language models (LLMs), we propose a novel strategy-based reinforcement learning framework integrated with LLMs called DYnamic STrategy Induction with Llms for reinforcement learning (DYSTIL) to overcome these limitations. DYSTIL dynamically queries a strategy-generating LLM to induce textual strategies based on advantage estimations and expert demonstrations, and gradually internalizes induced strategies into the RL agent through policy optimization to improve its performance through boosting policy generalization and enhancing sample efficiency. It also provides a direct textual channel to observe and interpret the evolution of the policy's underlying strategies during training. We test DYSTIL over challenging RL environments from Minigrid and BabyAI, and empirically demonstrate that DYSTIL significantly outperforms state-of-the-art baseline methods by 17.75% in average success rate while also enjoying higher sample efficiency during the learning process.</p>
+                </td>
+            </tr>
 
             <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
